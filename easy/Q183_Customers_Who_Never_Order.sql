@@ -58,4 +58,4 @@ cat1 <- left_join(customers, orders, by = c("id" = "customerID"))
 
 # keep where the nulls are (the customers who never orders are the ones that don't have an order_id)
 cat2 <- left_join(customers, orders, by = c("id" = "customerID")) %>%
-  filter(!complete.cases(.)) */
+  filter(!complete.cases(.))  */
